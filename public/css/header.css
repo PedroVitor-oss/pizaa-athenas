@@ -1,0 +1,74 @@
+header.main
+{
+    height:10vh;
+    background:#333;
+    display: flex;
+    justify-content: center;
+}
+header.main main
+{
+    padding-left: 10px;
+}
+header.main main,header.main main div
+{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+header.main main div a
+{
+    text-decoration: none;
+
+}
+header.main main div.logo
+{
+    font-family: 'zelda';
+    font-size:5vh
+}
+header.main main div.logo a
+{
+    display: flex;
+    align-items: center;
+}
+header.main main div.logo img
+{
+    height: 8vh;
+    margin:0 10px
+}
+header.main main div.logo span{
+    z-index: 2;
+    color:#FFCD00;
+
+}
+header.main main div.logo span.white
+{
+    z-index: 1;
+    color:#fff;
+}
+header.main main div.login
+{
+    display: flex;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    color:#fff;
+    font-size: 3vh;
+    
+    
+}
+header.main main div.login a
+{
+    font-family: sans-serif;
+    color:#fff;
+    font-size: 3vh;
+    margin-right: 20px;
+}
+@media (max-width:400px){
+    header.main main div.logo{
+      scale: 0.7;
+      transform: translateX(-20%);
+    }
+    header.main main div.login a
+    {
+        margin-right: 50%;
+    }
+}

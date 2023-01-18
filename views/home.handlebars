@@ -1,0 +1,91 @@
+{{{header}}}
+<section class="apresentacao">
+    <main>
+        <div class="welcome">
+            <span> Bem vindo a Athenas Pizzas </span>
+        </div>
+        <div class="info">
+            <div class="locale">
+                <a href="https://www.google.com.br/maps/dir//Pizzaria+Athenas+-+Rua+Jo%C3%A3o+Dembinski+-+Cidade+Industrial+De+Curitiba,+Curitiba+-+PR/@-25.4578989,-49.3487586,16.25z/data=!4m9!4m8!1m0!1m5!1m1!1s0x94dce26afa1dd063:0x7221bd15021bfd27!2m2!1d-49.3469799!2d-25.4577658!3e3" target="_blank" rel="noopener noreferrer" title="Rua Joao Dembinski 1091 Campo comprido, Curitiba, Estado de Paraná 81270-330 Brasil">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Rua Joao Dembinski 1091 Campo comprido, Curitiba, Estado de Paraná 81270-330 Brasil</span>
+                </a>
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    (41) 3373-3131
+                </span>
+            </div>
+            <div class="avaliation">
+                avaliação: 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+        </div>
+    </main>
+</section>
+<section class="promotions">
+    <main>
+        <div class="title">
+            Promoções
+        </div>
+        <div class="cont-promotion">
+            {{#each promotion}}
+                <div class="item-in-promotion">
+                    <div class="cont-img">
+                        <img src="{{img}}" alt="">
+                    </div>
+                    <h1 class="title">
+                        <a href="/promotion/{{id}}">
+                        {{title}}
+                        </a>
+                    </h1>
+                    <div class="valores">
+                        <h3 class="valor-real">R${{valor}}</h3>
+                        <h4 class="valor-false">R${{valorfalse}}</h4>  
+                    </div>
+
+                </div>
+            {{/each}}
+        </div>
+    </main>
+</section>
+<section class="promotions">
+    <main>
+        <h1 class="title">
+            Prontas
+        </h1>
+        <div class="cont-promotion">
+            {{#each prontas}}
+                <div class="item-in-promotion">
+                    <div class="cont-img">
+                        <img src="{{img}}" alt="">
+                    </div>
+                    <h1 class="title">
+                        <a href="/prontas/{{id}}">
+                        {{title}}
+                        </a>
+                    </h1>
+                    <div class="valores">
+                        <h3 class="valor-real">R${{valor}}</h3>
+                        <h4 class="valor-false">R${{valorfalse}}</h4>  
+                    </div>
+
+                </div>
+            {{/each}}
+        </div>
+    </main>
+</section>
+{{{rodape}}}
+<script>
+    {{#each styles}}
+        $("head").append(`<link rel="stylesheet" href="{{css}}">`)
+    {{/each}}
+    if('{{client.name}}' != ""){
+        $("header.main main div.login").html(`{{client.name}} <i class="fa-solid fa-circle-user"></i>`)
+    }
+</script>

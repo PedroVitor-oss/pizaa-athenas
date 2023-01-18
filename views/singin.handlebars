@@ -1,0 +1,32 @@
+{{{header}}}
+
+<section class="formulario">
+    <main>
+        <h1>Venha vazer parte da athena pizzas</h1>
+        <form action="/singin" method="post">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"placeholder="exemple@email.com" required>
+            <label for="name">Nome</label>
+            <input type="text" name="nameClient" id="name" placeholder="Nome" required>
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password"placeholder="Senha" required>
+            <div class="termos">
+            <input type="checkbox" name="" id="" required>
+            
+            li e concordo os <a href="/termos"> termos </a>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="login">
+            <p>Já possui uma conta clique <a href="login">aqui</a></p>
+        </div>
+    </main>
+</section>
+
+{{{rodape}}}
+<script>
+    $("header main .login").remove()
+    {{#each styles}}
+        $("head").append(`<link rel="stylesheet" href="{{css}}">`)
+    {{/each}}
+</script>

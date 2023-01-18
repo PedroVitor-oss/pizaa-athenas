@@ -1,0 +1,23 @@
+[
+    {
+        "id":0,
+        "img":"/img/no-img.png",
+        "title":"1 Pizza Big 12 fatias + Borda de catupyri",
+        "valor":64.90,
+        "valorfalse":89.90
+    },
+    {
+        "id":1,
+        "img":"/img/no-img.png",
+        "title":"1 Pizza Gigante 16 fatias + Opção de Refrigerante de brinde",
+        "valor":74.90,
+        "valorfalse":99.90
+    },
+    {
+        "id":2,
+        "img":"/img/no-img.png",
+        "title":"2 Pizza Grande 8 fatias cada + Opção de Refrigereante de brinde",
+        "valor":103.90,
+        "valorfalse":119.90    
+    }
+]

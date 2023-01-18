@@ -1,0 +1,16 @@
+[
+    {
+        "id":0,
+        "img":"/img/no-img.png",
+        "title":"1 Pizza Big inteira calabria",
+        "valor":64.90,
+        "valorfalse":89.90
+    },
+    {
+        "id":1,
+        "img":"/img/no-img.png",
+        "title":"1 Pizza Big 1/2 catupyri e 1/2 bolonha",
+        "valor":74.90,
+        "valorfalse":109.90
+    }
+]
